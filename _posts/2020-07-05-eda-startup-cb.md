@@ -1,85 +1,94 @@
 ---
 layout: post
 author: Shekhar Jha
-title: "Startup Crunchbase EDA - Part 1"
+title: "Startup Crunchbase EDA"
 excerpt_separator: <!--more-->
+image: https://jhashekhar.github.io/assets/img/bar_plot_1.png
 date: 2020-07-05
+github:
+    is_project_page: true
+    repository_url: "https://github.com/jhashekhar/startup-cb"
 ---
+<title-head><h2><u>{{ page.title }}</u></h2></title-head>
+<br>
+<p>This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data.</p>
 
-
-This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data.  <!--more-->
-
+<p>
 Below are the links to data and code:
+<ul style="font-size: 15px;">
+    <li><a href="https://www.kaggle.com/arindam235/startup-investments-crunchbase">Data</a></li>
+    <li><a href="https://github.com/jhashekhar/startup-cb">Code</a></li>
+    <li><a href="https://jhashekhar.github.io/2020-06-07-startup-cb-part2.md">Part 2</a></li>   
+</ul></p>
 
-- [Data](https://www.kaggle.com/arindam235/startup-investments-crunchbase)
-- [Code](https://github.com/jhashekhar/startup-cb)
-- [Part 2](https://jhashekhar.github.io/2020-06-07-startup-cb-part2.md)
-- [Part 3](https://jhashekhar.github.io/2020-07-07-startup-cb-part3.md)
-
-
+<p>
 This post is divided into three sections:
-1. Motivation
+<ol style="font-size: 15px;">
+<li>Motivation</li>
+<li>Basic Data Cleaning</li>
+    <ul>
+        <li>Data</li>
+        <li>Approach</li>
+    </ul>
+<li>Analysis</li>
+</ol></p>
 
-2. Basic Data Cleaning
-    - Data
-    - Approach
-3. Analysis
 
-## 1. Motivation
+<h3> 1. Motivation </h3>
 
-Before getting into Data Science and ML I used to work at a firm where part of my job comprised of interactions with a lot of different clients who were mainly medium business enterprises, I always wondered are they going to remain profitable, will they grow or they will fail and be out of business(this wasn't part of my job, but my boss's job). 
+<p>Before getting into Data Science and ML I used to work at a firm where part of my job comprised of interactions with a lot of different clients who were mainly medium business enterprises, I always wondered are they going to remain profitable, will they grow or they will fail and be out of business(this wasn't part of my job, but my boss's job). 
+
+<br><br>
 
 So, when I started with Data Science and encountered on this dataset, I couldn't stop myself from using my newly learnt skills, to do exactly the same using algorithms for startups.
+</p>
 
-## 2. Basic EDA
+<h3> 2. Basic EDA </h3>
 
-### 2.1  Data
+<h4> 2.1 Data </h4>
 
-So, let's have a small peek into the data: there are 54294 startups with 39 different features about them in the dataset. The data consists of diverse features like categorical features **status, market, country** etc. and numerical features like **funding_total_usd, seed, venture** etc. and other features like **founded_year, founded_month, permalink, region, category_list** etc. We will go into details on most of the features in below sections and analyse them accordingly.
+<p>So, let's have a small peek into the data: there are 54294 startups with 39 different features about them in the dataset. The data consists of diverse features like categorical features <b>status, market, country</b> etc. and numerical features like <b>funding_total_usd, seed, venture</b> etc. and other features like <b>founded_year, founded_month, permalink, region, category_list</b> etc. We will go into details on most of the features in below sections and analyse them accordingly.</p>
 
-### 2.2  Approach
+<h4> 2.2 Approach </h4>
 
-There are a lot of variables in the data. We can delve deeper into each of them but it will make the post very dense and hard to parse through. So instead I will focus the post around these questions, and then we can look for answers in the data.
-
-This post is structured around the following questions.
-
-- How startups are distributed across different markets?
-- Status, funding, categories of different startups?
-- How much is the regional significance for the funding/growth of the startup? Which region has more startups?
-- How funding varies or distributed across markets and categories?
-- Are there outliers - in terms of fundings for various stages? Which market do they belong to? 
+<p>There are a lot of variables in the data. We can delve deeper into each of them but it will make the post very dense and hard to parse through. So instead I will focus the post around these questions, and then we can look for answers in the data.</p>
 
 
-## 3. Analysis
+<p>This post is structured around the following questions.
+<ul style="font-size: 15px;">
+    <li>How startups are distributed across different markets?</li>
+    <li>Status, funding, categories of different startups?</li>
+    <li>How much is the regional significance for the funding/growth of the startup? Which region has more startups?</li>
+    <li>How funding varies or distributed across markets and categories?</li>
+    <li>Are there outliers - in terms of fundings for various stages? Which market do they belong to?</li>
+</ul></p>
 
-My approach to analysis would be to answer some of the interesting questions. The questions are not in any specific order.
+<h3> 3. Analysis </h3>
 
+<p>My approach to analysis would be to answer some of the interesting questions. The questions are not in any specific order.</p>
 
-## *How startups are distributed across different markets?*
+<h3><i>How startups are distributed across different markets?</i></h3>
 
-We have a feature column **market**. Following is the barplot distribution of startups across top ten markets with the number of startups operating, closed etc.
+<p>We have a feature column <b>market</b>. Following is the barplot distribution of startups across top ten markets with the number of startups operating, closed etc.</p>
 
 ![status of top 10 startups](https://jhashekhar.github.io/assets/img/bar_plot_1.png)
 
-Below is the pie-chart showing the percentages of startups with their in differnt markets.
+<p>Below is the pie-chart showing the percentages of startups with their in differnt markets.</p>
 
 ![status of top 4 startups](https://jhashekhar.github.io/assets/img/pie_plot_1.png)
 
-## *What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation?*
+<h3><i>What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation?</i></h3>
 
-Is there an effect of region on markets or categories in which startups operate? How important is regional advantage? In our dataset we have two features that are relevant in finding the answer to this question. One is startup's country of origin and the other is state that is specific to USA. 
+<p>Is there an effect of region on markets or categories in which startups operate? How important is regional advantage? In our dataset we have two features that are relevant in finding the answer to this question. One is startup's country of origin and the other is state that is specific to USA.<p>
 
-Los Angeles is known for Hollywood/entertainment industry. New York is the finance capital of United States. So I want to inspect the effect of these uniqueness over the startup culture.
+<p>Los Angeles is known for Hollywood/entertainment industry. New York is the finance capital of United States. So I want to inspect the effect of these uniqueness over the startup culture.<p>
 
-We will analyse all the cases.
+<h3><i>How funding varies or distributed across markets and categories?</i></h3>
 
-
-## *How funding varies or distributed across markets and categories?*
-
-Some startups are popular due to market they operate in for example, Uber, Yelp, Stripe are famous because they serve millions of coustomers every day, whereas there are startups that provide enterprise solutions, or they are operating in markets like BioTech, Medicine. So, are the ecommerce companies more.....
+<p>Some startups are popular due to market they operate in for example, Uber, Yelp, Stripe are famous because they serve millions of coustomers every day, whereas there are startups that provide enterprise solutions, or they are operating in markets like BioTech, Medicine. So, are the ecommerce companies more.....</p>
 
 
-## *Are there outliers - in terms of fundings for various stages? Which market do they belong to?*
+<h3><i>Are there outliers - in terms of fundings for various stages? Which market do they belong to?</i></h3>
 
 
 

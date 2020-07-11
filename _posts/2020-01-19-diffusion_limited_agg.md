@@ -2,9 +2,12 @@
 layout: post
 author: Shekhar Jha
 title: "Diffusion Limited Aggregation"
+image: https://jhashekhar.github.io/assets/img/diffusion_limited_agg.png
 excerpt_separator: <!--more-->
 date: 2020-01-19
 ---
+<title-head><h2><u>{{ page.title }}</u></h2></title-head>
+<br>
 
 ```
 import matplotlib.pyplot as plt

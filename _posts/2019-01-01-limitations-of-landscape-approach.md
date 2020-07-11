@@ -6,7 +6,8 @@ tags: [deep learning, optimization, loss-surface, gradient-descent]
 excerpt_separator: <!--more-->
 date: 2019-01-01
 ---
-<!--more-->
+<title-head><h2><u>{{ page.title }}</u></h2></title-head>
+<br>
 Here I will write briefly about different approaches towards convergence analysis in the case of Deep Neural Networks(DNN).
 
 The first approach that has been taken by most researchers is the analysis of loss surface(landscape). The problem with
