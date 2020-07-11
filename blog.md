@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: post
 title: Shekhar Jha
 description: Home page
 ---
@@ -12,7 +12,7 @@ Few of my projects are<a href="https://github.com/jhashekhar/jigsaw-multilingual
 
 <h3>Recent Posts</h3>
 
-{% for post in site.posts limit:2 %}
+{% for post in site.posts %}
 <table>
   <tr>
     <td><img src="{{ post.image }}"></td>
