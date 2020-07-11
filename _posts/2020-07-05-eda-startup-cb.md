@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 author: Shekhar Jha
 title: "Startup Crunchbase EDA - Part 1"
 excerpt_separator: <!--more-->
