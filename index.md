@@ -3,6 +3,14 @@ layout: index
 title: Shekhar Jha
 description: Home page
 ---
+<style>
+#menu img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
 <h1 text-align="left">{{ page.title }}</h1>
 <p>Hi, I'm currently in the process of transitioning to Machine Learning field from Consultancy. I'm interested in NLP, Meta Learning, Optimization and Computer Vision.<br/><br/>
 
@@ -13,9 +21,9 @@ Few of my projects are<a href="https://github.com/jhashekhar/jigsaw-multilingual
 <h3>Recent Posts</h3>
 
 {% for post in site.posts limit:2 %}
-<table>
+<table id="menu">
   <tr>
-    <td><img src="{{ post.image }}"></td>
+    <td width="180px" height="160px"><img src="{{ post.image }}"></td>
     <td><p><a href="{{ post.url }}"> {{ post.title }} </a> | {{ post.date | date: "%b %d, %Y" }} <br/>
     {{ post.content | strip_html | truncatewords: 40 }}
     </p></td>

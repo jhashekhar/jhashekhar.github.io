@@ -2,13 +2,20 @@
 layout: post
 title: Blog
 ---
+<style>
+#menu img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>
 
-<h3>Posts</h3>
+<h3 align="center"><u>Posts</u></h3><br>
 
 {% for post in site.posts %}
-<table>
+<table id="menu">
   <tr>
-    <td><img src="{{ post.image }}"></td>
+    <td width="180px" height="160px"><img src="{{ post.image }}"></td>
     <td><p><a href="{{ post.url }}"> {{ post.title }} </a> | {{ post.date | date: "%b %d, %Y" }} <br/>
     {{ post.content | strip_html | truncatewords: 40 }}
     </p></td>
