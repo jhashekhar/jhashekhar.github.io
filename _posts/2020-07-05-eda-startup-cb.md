@@ -72,11 +72,11 @@ So, when I started with Data Science and encountered on this dataset, I couldn't
 
 <p>We have a feature column <b>market</b>. Following is the barplot distribution of startups across top ten markets with the number of startups operating, closed etc.</p>
 
-![status of markets]("https://jhashekhar.github.io/assets/img/bar_plot_1.png")
+<img src="https://jhashekhar.github.io/assets/img/bar_plot_1.png">
 
 <p>Below is the pie-chart showing the percentages of startups with their in differnt markets.</p>
 
-![status of top 4 startups](https://jhashekhar.github.io/assets/img/pie_plot_1.png)
+<img src="https://jhashekhar.github.io/assets/img/pie_plot_1.png">
 
 <h3><i>What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation?</i></h3>
 
