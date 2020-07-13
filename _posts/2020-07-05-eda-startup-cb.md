@@ -3,7 +3,7 @@ layout: post
 author: Shekhar Jha
 title: "Startup Crunchbase EDA"
 excerpt_separator: <!--more-->
-image: https://jhashekhar.github.io/assets/img/bar_plot_1.png
+image: https://jhashekhar.github.io/assets/img/funding_across_market_segments.png
 date: 2020-07-05
 
 github:
