@@ -172,4 +172,4 @@ plt.show()
 ```
 
 
-![png](diffusion_limited_agg_files/diffusion_limited_agg_10_0.png)
+<img src="https://jhashekhar.github.io/assets/img/diffusion_limited_agg.png" width="400px" height="400px" align="center">
