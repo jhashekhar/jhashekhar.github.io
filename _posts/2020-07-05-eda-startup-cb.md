@@ -4,7 +4,7 @@ author: Shekhar Jha
 title: "Startup Crunchbase EDA"
 excerpt_separator: <!--more-->
 #image: https://jhashekhar.github.io/assets/img/funding_across_market_segments.png
-image: https://jhashekhar.github.io/assets/img/eda-p1/funding_yoy.gif
+image: https://jhashekhar.github.io/assets/img/startup_p/funding_yoy.gif
 date: 2020-07-05
 
 github:
@@ -74,12 +74,12 @@ So, when I started with Data Science and encountered on this dataset, I couldn't
 <p>We have a feature column <b>market</b>. Following is the barplot distribution of startups across top ten markets with the number of startups operating, closed etc.</p>
 
 
-<img src="https://jhashekhar.github.io/assets/img/eda-p1/bar_plot_1.png">
+<img src="https://jhashekhar.github.io/assets/img/startup_p/bar_plot_1.png">
 
 <p>Below is the pie-chart showing the percentages of startups with their in differnt markets.</p>
 
-<img src="https://jhashekhar.github.io/assets/img/eda-p1/piep-1.png">
-<img src="https://jhashekhar.github.io/assets/img/eda-p1/piep-2.png">
+<img src="https://jhashekhar.github.io/assets/img/startup_p/piep-1.png">
+<img src="https://jhashekhar.github.io/assets/img/startup_p/piep-2.png">
 
 <h3><i>What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation?</i></h3>
 
@@ -92,7 +92,7 @@ So, when I started with Data Science and encountered on this dataset, I couldn't
 <p>One of the other point of interset is the funding of startup across market segments year over year.</p>
 
 <!-- <img src="https://jhashekhar.github.io/assets/img/funding_across_market_segments.png"> -->
-<img src="https://jhashekhar.github.io/assets/img/eda-p1/funding_yoy.gif">
+<img src="https://jhashekhar.github.io/assets/img/startup_p/funding_yoy.gif">
 
 <p>Some startups are popular due to market they operate in for example, Uber, Yelp, Stripe are famous because they serve millions of coustomers every day, whereas there are startups that provide enterprise solutions, or they are operating in markets like BioTech, Medicine. So, are the ecommerce companies more.....</p>
 
