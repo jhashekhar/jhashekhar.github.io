@@ -10,14 +10,15 @@ title: Blog
   }
 </style>
 
-<h3 align="center"><u>Posts</u></h3><br>
+<!-- <h3 align="center"><u>Posts</u></h3><br> -->
+<br/><br/>
 
 {% for post in site.posts %}
 <table id="menu">
   <tr>
     <td width="180px" height="160px"><img src="{{ post.image }}"></td>
     <td><p><a href="{{ post.url }}"> {{ post.title }} </a> | {{ post.date | date: "%b %d, %Y" }} <br/>
-    {{ post.content | strip_html | truncatewords: 40 }}
+    {{ post.content | strip_html | truncatewords: 20 }}
     </p></td>
   </tr>
 </table>

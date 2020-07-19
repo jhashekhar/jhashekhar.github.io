@@ -11,13 +11,17 @@ description: Home page
   }
 </style>
 
-<h1 text-align="left">{{ page.title }}</h1>
-<p>Hi, I'm currently in the process of transitioning to Machine Learning field from Consultancy. I'm interested in NLP, Meta Learning, Optimization and Computer Vision.<br/><br/>
+<title-head><h1 text-align="center">{{ page.title }}</h1></title-head>
+<br/>
+<p>Hi. I'm Shekhar. I'm enjoy working on topics related to Natural Language Processing, Generative Models and Computer Vision. Recently I've been experimenting a lot with various NLP tasks like Multlingual Learning, text summarization etc. and application of generative models in NLP.<br/><br/>
 
-Few of my projects are<a href="https://github.com/jhashekhar/jigsaw-multilingual"> Jigsaw Multilingual </a> using TPUs and PyTorch, <a href="https://github.com/jhashekhar/disaster-clf"> Disaster Classification </a> on tweet dataset.<br/><br/>
+I've created <a href="https://github.com/jhashekhar/jigsaw-multilingual"> Multi-lingual Classification</a> model trained using TPUs in PyTorch. Performed<a href="https://github.com/jhashekhar/disaster-clf"> Disaster Classification </a> on tweet dataset.<br/><br/></p>
 
-<a href="https://github.com/jhashekhar"> Github  </a> / <a href="https://linkedin.com/in/jhas"> Linkedin </a> / <a href="https://kaggle.com/xanthate"> Kaggle</a> / <a href="blog.html"> Blog</a></p>
+<p> You can read my blog<a href="blog.html"> here.</a></p><br/>
 
+<p>Other links: <a href="https://github.com/jhashekhar"> Github  </a> / <a href="https://linkedin.com/in/jhas"> Linkedin </a> / <a href="https://kaggle.com/xanthate"> Kaggle</a> / <a href="blog.html"> Blog </a></p>
+
+<!--
 <h3>Recent Posts</h3>
 
 {% for post in site.posts limit:2 %}
@@ -30,3 +34,4 @@ Few of my projects are<a href="https://github.com/jhashekhar/jigsaw-multilingual
   </tr>
 </table>
 {% endfor %}
+-->

@@ -253,7 +253,7 @@ td, th { padding: 0; }
 
 * { box-sizing: border-box; }
 
-body { padding: 0; margin: 0; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #0a0a0ac0; }
+body { padding: 0; margin: 0; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #0a0a0ac0; width: 100%; max-width: 800px; margin-left: auto; margin-right: auto; text-align: justify; }
 
 #skip-to-content { height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px; }
 #skip-to-content:focus { position: fixed; top: 10px; left: 10px; height: auto; width: auto; background: #e19447; outline: thick solid #e19447; }
@@ -324,7 +324,7 @@ a:hover { color: #f39509; }
 
 title-head h1, title-head h2, title-head h3, title-head h4, title-head h5, title-head h6 { margin-top: 0; margin-bottom: 4rem; font-weight: normal; text-align: center; color: #0a0a0a; }
 
-.neo-header { color: #0a0a0a; background-color: #fff; width: 100%; padding: 2rem 14rem; display: inline-block; }
+.neo-header { color: #0a0a0a; background-color: #fff; width: 100%; padding: 2rem 4rem 0rem 4rem; display: inline-block; }
 .neo-header left-item { float: left; }
 .neo-header right-item { float: right; }
 .neo-header hr { height: 0.2px; padding: 0; margin: 2rem 0; background-color: #eff0f1; border: 0; }
