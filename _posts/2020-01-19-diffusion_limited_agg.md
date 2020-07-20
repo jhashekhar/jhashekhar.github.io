@@ -2,7 +2,7 @@
 layout: post
 author: Shekhar Jha
 title: "Diffusion Limited Aggregation"
-image: "https://jhashekhar.github.io/assets/img/diffusion_p/n_500.png"
+image: "https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_100.gif"
 excerpt_separator: <!--more-->
 date: 2020-07-20
 ---
@@ -17,10 +17,18 @@ date: 2020-07-20
 
 <p><b>Reference: </b><a href="http://paulbourke.net/fractals/dla/"> Diffusion Limited Aggregation</a>. Please read this linked post. Apart from 2 dimensional DLA they also talk about 3 dimensional DLA and how that can render cool visualization of natural processes.</p>
 
-<h3> What is Diffusion Limited Aggregation or DLA?</h3>
-To understand what DLA is, let's start with diffusion. Diffusion is 
+Below is the DLA progression for N = 100, N = 1000, N = 2000, where N is the number of particles.
+<table style="width: 100%; text-align: center;">
+<tr>
+    <td><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_100.gif"></td>
+    <td><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000.gif"></td>
+    <td><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_2000.gif"></td>
+</tr>
+<tr>
+    <td>N = 100</td>
+    <td>N = 1000</td>
+    <td>N = 2000</td>
+</tr>
+</table>
 
-
-
-
-<img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_500.png" width="400px" height="400px" align="center">
+<!--<img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_500.png" width="400px" height="400px" align="center">-->
