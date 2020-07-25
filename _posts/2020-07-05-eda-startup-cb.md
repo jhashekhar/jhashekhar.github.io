@@ -88,6 +88,8 @@ The markets
 
 <p>Los Angeles is known for Hollywood/entertainment industry. New York is the finance capital of United States. So I want to inspect the effect of these uniqueness over the startup culture.<p>
 
+<img src="">
+
 <h3><i>How funding varies or distributed across markets and categories?</i></h3>
 
 <p>One of the other point of interset is the funding of startup across market segments year over year.</p>
@@ -97,8 +99,8 @@ The markets
 
 <p>Some startups are popular due to market they operate in for example, Uber, Yelp, Stripe are famous because they serve millions of coustomers every day, whereas there are startups that provide enterprise solutions, or they are operating in markets like BioTech, Medicine. So, are the ecommerce companies more.....</p>
 
-
-<h3><i>Are there outliers - in terms of fundings for various stages? Which market do they belong to?</i></h3>
+<!--
+<h3><i>Are there outliers - in terms of fundings for various stages? Which market do they belong to?</i></h3>-->
 
 
 
