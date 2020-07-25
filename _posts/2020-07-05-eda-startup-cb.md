@@ -44,24 +44,24 @@ This post is divided into three sections:
 So, when I started with Data Science and encountered on this dataset, I couldn't stop myself from using my newly learnt skills, to do exactly the same using algorithms for startups.
 </p>
 
-<h3> 2. Basic EDA </h3>
+<h3> 2. Let's explore the data </h3>
 
 <h4> 2.1 Data </h4>
 
-<p>So, let's have a small peek into the data: there are 54294 startups with 39 different features about them in the dataset. The data consists of diverse features like categorical features <b>status, market, country</b> etc. and numerical features like <b>funding_total_usd, seed, venture</b> etc. and other features like <b>founded_year, founded_month, permalink, region, category_list</b> etc. We will go into details on most of the features in below sections and analyse them accordingly.</p>
+<p>So, let's have a little peek into the data: there are 54294 startups with 39 different features in the dataset. The data consists of diverse features like categorical features - <b>status, market, country</b> etc. and numerical features - <b>funding_total_usd, seed, venture</b> etc. and other features - <b>founded_year, founded_month, permalink, region, category_list</b> etc. We will go into detail on most of the features in the below sections and analyze them accordingly.</p>
 
 <h4> 2.2 Approach </h4>
 
-<p>There are a lot of variables in the data. We can delve deeper into each of them but it will make the post very dense and hard to parse through. So instead I will focus the post around these questions, and then we can look for answers in the data.</p>
+<p>There are a lot of variables in the data. We can delve deeper into each of these but that would make the post long and hard to parse through. Instead, I will try to answer some important questions about the datasets in this post.</p>
 
 
 <p>This post is structured around the following questions.
 <ul style="font-size: 15px;">
     <li>How startups are distributed across different markets?</li>
     <li>Status, funding, categories of different startups?</li>
-    <li>How much is the regional significance for the funding/growth of the startup? Which region has more startups?</li>
-    <li>How funding varies or distributed across markets and categories?</li>
-    <li>Are there outliers - in terms of fundings for various stages? Which market do they belong to?</li>
+    <li>How much is the regional significance for the funding/growth of a startup?</li>
+    <li>How funding is distributed across markets and categories?</li>
+    <li>Are there outliers?</li>
 </ul></p>
 
 <h3> 3. Analysis </h3>
@@ -70,12 +70,14 @@ So, when I started with Data Science and encountered on this dataset, I couldn't
 
 <h3><i>How startups are distributed across different markets?</i></h3>
 
-<p>We have a feature column <b>market</b>. Following is the barplot distribution of startups across top ten markets with the number of startups operating, closed etc.</p>
+<p>We have a feature column <b>market</b>. Following is the barplot distribution of all startups across top ten markets with the number of startups operating, closed etc. till 2014.</p>
 
 
 <img src="https://jhashekhar.github.io/assets/img/startup_p/bar_plot_1.png">
 
-<p>Below is the pie-chart showing the percentages of startups with their in differnt markets.</p>
+The markets
+
+<p>Below the plot shows the percentages of startups across different markets.</p>
 
 <img src="https://jhashekhar.github.io/assets/img/startup_p/piep-1.png">
 <img src="https://jhashekhar.github.io/assets/img/startup_p/piep-2.png">
