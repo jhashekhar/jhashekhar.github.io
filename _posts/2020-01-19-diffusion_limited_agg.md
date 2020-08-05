@@ -4,12 +4,12 @@ author: Shekhar Jha
 title: "Diffusion Limited Aggregation"
 image: "https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000_1.gif"
 excerpt_separator: <!--more-->
-date: 2020-07-20
+date: 2020-01-20
 ---
 <title-head><h2><u>{{ page.title }}</u></h2></title-head>
 <br>
 
-<p>Few months ago when I was just a beginner in programming, during my job application process I received an assignment related to Diffusion Limited Aggregation. At that time I somehow managed to do part of the assigment. But got overwhelmed by it and gave up. A couple of days ago, I thought to give it another shot. So here are initial results.</p>
+<p>In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At that time I somehow managed to do part of the assigment. But got overwhelmed by it and gave up. A couple of days ago, I thought to give it another shot. So here are initial results.</p>
 
 <p>I'm using python, matplotlib, seaborn, gif libraries to generate the visuals.</p>
 
