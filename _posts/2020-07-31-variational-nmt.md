@@ -1,0 +1,88 @@
+---
+layout: post
+author: Shekhar Jha
+title: Variational Neural Machine Translation
+excerpt_separator: <!--more-->
+image: "https://jhashekhar.github.io/assets/img/lvm/latent-random-variable.png"
+---
+
+<title-head><h2><u>{{page.title}}</u></h2></title-head>
+<br>
+<p>While going deeper into Speech synthesis and Machine Translation, specifically Neural Machine Translation. I encountered this great paper titled <a href="https://arxiv.org/abs/2005.13978">Variational Neural Machine Translation with Normalizing Flows</a>. I've been familiar with Variational part of the title and somewhat rusty understanding of Normalizing Flow part. I was really excited with these frameworks application in NMT.</p>
+
+<p> So, given the situation I would try to come up with an intuitive understanding of the Variational Inference, Normalizing Flows and different sub topics within these two topics from the perspective of NMT.</p>
+
+<h3><i>Addressing the translational ambiguity</i></h3>
+<hr>
+Translation is inherently ambiguous. It is dependent on the context, domain and other factors. So we need to have a translation model that accounts for this ambiguity. So, how the current models addresses this ambiguity and how can we improve upon them ?
+
+<p>Currently NMT is used widely and it has been constantly churning out state-of-the-art results since its introduction. But the NMT framework has no explicit mechanisms to account for translation amboguities.</p>
+
+<p>To address the issues mentioned above Latent Variable NMT(LVNMT) was introduced. There are few things that we need to keep in mind about Latent variables:</p>
+
+<ul style="font-size: 15px;">
+    <li>Analyzing the latent variables is difficult and tricky. Think of trying to infer the state of learning while analyzing the attention values or the values of embedding vecotrs in Word2Vec or the in CV analysing the saliency maps. Experiments shows that latent codes improve accuracy.</li>
+    <br>
+    <li>It adds complexity to the model that makes the model flexible but also leads to the problem of intractable inference.(The intergration does not have analytic solution and numerical computation is very large).</li>
+</ul>
+
+<p>Variational NMT (VNMT) belongs to this family of LVNMT.</p>
+<p> Now I've introduced lot of keywords; Latent Variables, Latent Variable Model, Intractable inference, Variational NMT. Let's go through these and try to develop intuition regarding these. Before that a quick summary of what we learnt till now:</p>
+
+
+<h3>tldr:</h3>
+<hr>
+<ul style="font-size: 15px;">
+    <li>Machine translation has ambiguities - depending upon author's style, context, domain, etc.</li>
+    <li>Current NMT models gives SOTA results but doesn't have explicit mechanisms to address these ambiguities.</li>
+    <li>To address it, Latent Variable Model NMT (LVNMT) is introduced.</li>
+    <li>LVNMT models have intractable posterior and to get around that strong assumptions are imposed.</li>
+    <li>Variational NMT with Normalizing Flows tries to address these issues.</li>
+</ul>
+
+<br>
+
+<h3><i>Latent Variable Models</i></h3>
+<hr>
+<table>
+    <tr>
+        <td>
+            <img src="https://jhashekhar.github.io/assets/img/lvm/latent-random-variable.png">
+        </td>
+        <td>
+            <p>Latent variable models defines distribution over a given sample x by using a latent variable \(z\). Most often \(z\) is a vector.</p>
+                <ul style="font-size: 15px;">
+                    <li>Latent variable \(z\) is sampled from a prior distribution \(p(z)\).</li>
+                    <li><b>Prior distribution \(p(z)\)</b> is typically Gaussian distribution.</li>
+                    <li><b>\(p(x|z)\) is the likelihood</b> of the sample.</li>
+                    <li>All these ideas work for parameterized distribtuion as well.</li>
+            </ul>
+        </td>
+     </tr>
+</table>
+
+<p>There are several ways to understand the intuition behind latent variables, the one that sticks with me is given by Carl Doersch - MNIST digit generation. To generate a digit the generator/decoder first needs to pick the digit before populating the pixels containg strokes, boundaries etc. The decoder while having drawn half-way through 5 cannot decide on drawing 0 as that would resemble none of the digits. This kind of decision to select the digit before starting the drawing is called latent variable. Also, latent variable in most cases is a vector and given the digit that's been generated, it is hard to know which "latent" vector lead to it and that is the reason for calling the vector latent.</p>
+
+<p style="font-size: 20px;">$$p_\theta(x, z) = p(z|x) p(x) = p(x|z) p(z)$$</p>
+
+<h3><i></i></h3>
+<h3><i>Variational Inference</i></h3>
+<hr>
+<p>In variational inference we try to minimize the Evidence Lower Bound (ELBO):</p>
+
+<p style="font-size: 20px;">$$L_{\theta, \phi}(x) = \log p_\theta(x) - KL(q_\phi(z|x) || p_\theta(z|x))$$</p>
+
+<p>where, \(\log p_\theta(x)\) is reconstruction error and second term is the KL Divergence.</p>
+
+<h4>Todo :</h4>
+<hr>
+<ol style="font-size: 15px;">
+<li> Expand on Variational Inference - especially the intuitive interpretation of the ELBO.</li>
+<li> Adapt ELBO for VNMT and need to understand different kind of Flows - their strengths and limitations.</li>
+</ol>
+<hr>
+
+
+
+
+
