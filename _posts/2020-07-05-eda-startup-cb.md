@@ -18,8 +18,7 @@ github:
 Below are the links to data and code:
 <ul style="font-size: 15px;">
     <li><a href="https://www.kaggle.com/arindam235/startup-investments-crunchbase">Data</a></li>
-    <li><a href="https://github.com/jhashekhar/startup-cb">Code</a></li>
-    <li><a href="https://jhashekhar.github.io/2020-06-07-startup-cb-part2.md">Part 2</a></li>   
+    <li><a href="https://github.com/jhashekhar/startup-cb">Code</a></li>  
 </ul></p>
 
 <p>
@@ -96,8 +95,6 @@ The markets
 
 <!-- <img src="https://jhashekhar.github.io/assets/img/funding_across_market_segments.png"> -->
 <img src="https://jhashekhar.github.io/assets/img/startup_p/funding_yoy.gif">
-
-<p>Some startups are popular due to market they operate in for example, Uber, Yelp, Stripe are famous because they serve millions of coustomers every day, whereas there are startups that provide enterprise solutions, or they are operating in markets like BioTech, Medicine. So, are the ecommerce companies more.....</p>
 
 <!--
 <h3><i>Are there outliers - in terms of fundings for various stages? Which market do they belong to?</i></h3>-->
