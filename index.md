@@ -13,13 +13,17 @@ description: Home page
 
 <title-head><h1 text-align="center">{{ page.title }}</h1></title-head>
 <br/>
-<p>Hi. I'm Shekhar. I'm enjoy working on topics related to Natural Language Processing, Generative Models and Computer Vision. Recently I've been experimenting a lot with various NLP tasks like Multlingual Learning, text summarization etc. and application of generative models in NLP.<br/><br/>
 
-I've created <a href="https://github.com/jhashekhar/jigsaw-multilingual"> Multi-lingual Classification</a> model trained using TPUs in PyTorch. Performed<a href="https://github.com/jhashekhar/disaster-clf"> Disaster Classification </a> on tweet dataset.<br/><br/></p>
+<p>Hello, I'm Shekhar. I enjoy working on problems related to  Natural Language Processing, 
+Generative Models and functional programming.<br/><br/></p>
 
-<p> You can read my blog<a href="blog.html"> here.</a></p><br/>
 
-<p>Other links: <a href="https://github.com/jhashekhar"> Github  </a> / <a href="https://linkedin.com/in/jhas"> Linkedin </a> / <a href="https://kaggle.com/xanthate"> Kaggle</a> / <a href="blog.html"> Blog </a></p>
+<p>Other links: <a href="https://github.com/jhashekhar"> Github  </a> | <a href="blog.html"> Blog </a></p>
+
+<br/>
+
+<p> <b>Recent:</b>  I'm currently learning functional programming in Haskell. I'm also working on 
+a speech-to-text project and application of Latent Variable Model in Machine Translation.</p>
 
 <!--
 <h3>Recent Posts</h3>
