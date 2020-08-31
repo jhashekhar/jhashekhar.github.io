@@ -5,6 +5,36 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: right;
+  padding: 10px;
+}
+
+.left {
+  width: 25%;
+  position: fixed;
+  text-align: center;
+}
+
+.right {
+  width: 75%;
+  padding-left: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Blog | Shekhar Jha</title>
@@ -21,14 +51,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=54b01911c58b000ee0eba9458d26a7b5b6d3b349">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6acae0d41bb0bb6eb1e119984a92d13ffcb38f34">
   </head>
-  <body style="max-width: 1200px;">
-  <header class="neo-header">
-    <right-item><a href="../../../index.html"> << Back to Homepage</a></right-item>
-  </header>
-    <main id="content" class="main-content" role="main">
-      <style>
+  <body style="max-width: 1000px;">
+
+      <div class="row">
+          <div class="column left">
+              <br><br><br><br><br>
+            <ul style="list-style:none;font-size:20px;font-family:avenir;">
+                <li><a href="../../../index.html" style="{color:#000;} :hover{#f39509;}">home</a></li>
+                <br>
+                <li><a href="../../../blog.html" style="{color:#000;} :hover{#f39509;}">other posts</a></li>
+            </ul>
+          </div>
+
+          <div class="column right">
+                <main id="content" class="main-content" role="main">
+                    <style>
 #menu img {
     display: block;
     width: 100%;
@@ -41,49 +80,52 @@
 
 <table id="menu">
   <tr>
-    <td width="180px" height="160px"><img src="https://jhashekhar.github.io/assets/img/lvm/latent-random-variable.png" /></td>
-    <td><p><a href="/2020/07/31/variational-nmt.html"> Variational Neural Machine Translation </a> <!--| Jul 31, 2020--> <br />
-    Variational Neural Machine Translation While going deeper into Speech synthesis and Machine Translation, specifically Neural Machine Translation. I encountered this...
+    <!--<td width="180px" height="160px"><img src="https://jhashekhar.github.io/assets/img/lvm/latent-random-variable.png"></td>-->
+    <td><p><a href="/2020/07/31/variational-nmt.html"> Variational NMT </a> <!-- | Jul 31, 2020 <br>
+    Variational NMT While going deeper into Speech synthesis and Machine Translation, specifically Neural Machine Translation. I encountered this great paper...-->
     </p></td>
   </tr>
 </table>
 
 <table id="menu">
   <tr>
-    <td width="180px" height="160px"><img src="https://jhashekhar.github.io/assets/img/startup_p/funding_yoy.gif" /></td>
-    <td><p><a href="/2020/07/05/eda-startup-cb.html"> Startup Crunchbase EDA </a> <!--| Jul 05, 2020--> <br />
-    Startup Crunchbase EDA This is Part-1 of a series of two post where I will be trying to visualise and...
+    <!--<td width="180px" height="160px"><img src="https://jhashekhar.github.io/assets/img/startup_p/funding_yoy.gif"></td>-->
+    <td><p><a href="/2020/07/05/eda-startup-cb.html"> Startup Crunchbase EDA </a> <!-- | Jul 05, 2020 <br>
+    Startup Crunchbase EDA This is Part-1 of a series of two post where I will be trying to visualise and...-->
     </p></td>
   </tr>
 </table>
 
 <table id="menu">
   <tr>
-    <td width="180px" height="160px"><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000_1.gif" /></td>
-    <td><p><a href="/2020/01/20/diffusion_limited_agg.html"> Diffusion Limited Aggregation </a> <!--| Jan 20, 2020--> <br />
-    Diffusion Limited Aggregation In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At...
+    <!--<td width="180px" height="160px"><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000_1.gif"></td>-->
+    <td><p><a href="/2020/01/20/diffusion_limited_agg.html"> Diffusion Limited Aggregation </a> <!-- | Jan 20, 2020 <br>
+    Diffusion Limited Aggregation In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At...-->
     </p></td>
   </tr>
 </table>
 
 <table id="menu">
   <tr>
-    <td width="180px" height="160px"><img src="" /></td>
-    <td><p><a href="/2019/01/01/limitations-of-landscape-approach.html"> Limitations of Landscape Approach for understanding Optimization </a> <!--| Jan 01, 2019--> <br />
-    Limitations of Landscape Approach for understanding Optimization Here I will write briefly about different approaches towards convergence analysis in the...
+    <!--<td width="180px" height="160px"><img src=""></td>-->
+    <td><p><a href="/2019/01/01/limitations-of-landscape-approach.html"> Limitations of Landscape Approach for understanding Optimization </a> <!-- | Jan 01, 2019 <br>
+    Limitations of Landscape Approach for understanding Optimization Here I will write briefly about different approaches towards convergence analysis in the...-->
     </p></td>
   </tr>
 </table>
 
 <table id="menu">
   <tr>
-    <td width="180px" height="160px"><img src="" /></td>
-    <td><p><a href="/2018/11/12/optimization-questions.html"> Optimization: Few Questions </a> <!--| Nov 12, 2018--> <br />
-    Optimization: Few Questions After reading and doing some toy projects in deep learning I got interested in various aspects of...
+    <!--<td width="180px" height="160px"><img src=""></td>-->
+    <td><p><a href="/2018/11/12/optimization-questions.html"> Optimization: Few Questions </a> <!-- | Nov 12, 2018 <br>
+    Optimization: Few Questions After reading and doing some toy projects in deep learning I got interested in various aspects of...-->
     </p></td>
   </tr>
 </table>
 
-    </main>
-  </body>
+
+                </main>
+          </div>
+      </div>
+    </body>
 </html>

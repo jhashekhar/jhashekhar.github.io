@@ -10,20 +10,20 @@ github:
     is_project_page: true
     repository_url: "https://github.com/jhashekhar/startup-cb"
 ---
-<title-head><h2><u>{{ page.title }}</u></h2></title-head>
+<title-head><h1>{{ page.title }}</h1></title-head>
 <br>
 <p>This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data.</p>
 
 <p>
 Below are the links to data and code:
-<ul style="font-size: 15px;">
+<ul>
     <li><a href="https://www.kaggle.com/arindam235/startup-investments-crunchbase">Data</a></li>
     <li><a href="https://github.com/jhashekhar/startup-cb">Code</a></li>  
 </ul></p>
 
 <p>
 This post is divided into three sections:
-<ol style="font-size: 15px;">
+<ol>
 <li>Motivation</li>
 <li>Basic Data Cleaning</li>
     <ul>
@@ -55,7 +55,7 @@ So, when I started with Data Science and encountered on this dataset, I couldn't
 
 
 <p>This post is structured around the following questions.
-<ul style="font-size: 15px;">
+<ul>
     <li>How startups are distributed across different markets?</li>
     <li>Status, funding, categories of different startups?</li>
     <li>How much is the regional significance for the funding/growth of a startup?</li>

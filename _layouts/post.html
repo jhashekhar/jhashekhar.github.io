@@ -13,6 +13,36 @@
       </script>
     {% endif %}
     <meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: right;
+  padding: 10px;
+}
+
+.left {
+  width: 25%;
+  position: fixed;
+  text-align: center;
+}
+
+.right {
+  width: 75%;
+  padding-left: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
 
 {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,12 +50,23 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
-  <body style="max-width: 1200px;">
-  <header class="neo-header">
-    <right-item><a href="../../../index.html"> << Back to Homepage</a></right-item>
-  </header>
-    <main id="content" class="main-content" role="main">
-      {{ content }}
-    </main>
-  </body>
+  <body style="max-width: 1000px;">
+
+      <div class="row">
+          <div class="column left">
+              <br><br><br><br><br>
+            <ul style="list-style:none;font-size:20px;font-family:avenir;">
+                <li><a href="../../../index.html" style="{color:#000;} :hover{#f39509;}">home</a></li>
+                <br>
+                <li><a href="../../../blog.html" style="{color:#000;} :hover{#f39509;}">other posts</a></li>
+            </ul>
+          </div>
+
+          <div class="column right">
+                <main id="content" class="main-content" role="main">
+                    {{ content }}
+                </main>
+          </div>
+      </div>
+    </body>
 </html>

@@ -253,12 +253,12 @@ td, th { padding: 0; }
 
 * { box-sizing: border-box; }
 
-body { padding: 0; margin: 0; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #0a0a0ac0; width: 100%; max-width: 800px; margin-left: auto; margin-right: auto; text-align: justify; }
+body { padding: 0; margin: 0; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; color: #000; width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; text-align: justify; }
 
 #skip-to-content { height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px; }
-#skip-to-content:focus { position: fixed; top: 10px; left: 10px; height: auto; width: auto; background: #e19447; outline: thick solid #e19447; }
+#skip-to-content:focus { position: fixed; top: 10px; left: 10px; height: auto; width: auto; background: rgba(245, 245, 245, 0.7529411765); outline: thick solid rgba(245, 245, 245, 0.7529411765); }
 
-a { color: #1e6bb8; text-decoration: none; }
+a { color: #0a0a0ac0; text-decoration: none; }
 a:hover { color: #f39509; }
 
 .btn { display: inline-block; margin-bottom: 1rem; color: rgba(255, 255, 255, 0.7); background-color: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); border-style: solid; border-width: 1px; border-radius: 0.3rem; transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
@@ -292,7 +292,7 @@ a:hover { color: #f39509; }
 .main-content kbd { background-color: #fafbfc; border: 1px solid #c6cbd1; border-bottom-color: #959da5; border-radius: 3px; box-shadow: inset 0 -1px 0 #959da5; color: #444d56; display: inline-block; font-size: 11px; line-height: 10px; padding: 3px 5px; vertical-align: middle; }
 .main-content img { max-width: 100%; text-align: center; }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { margin-top: 2rem; margin-bottom: 1rem; font-weight: normal; color: #0a0a0a; }
-.main-content p { margin-bottom: 1em; font-size: 14px; }
+.main-content p { font-family: avenir; margin-bottom: 1em; font-size: 14px; }
 .main-content code { padding: 2px 4px; font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9rem; color: #567482; background-color: #f3f6fa; border-radius: 0.3rem; }
 .main-content pre { padding: 0.8rem; margin-top: 0; margin-bottom: 1rem; font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace; color: #567482; word-wrap: normal; background-color: #f3f6fa; border: solid 1px #dce6f0; border-radius: 0.3rem; }
 .main-content pre > code { padding: 0; margin: 0; font-size: 0.9rem; color: #567482; word-break: normal; white-space: pre; background: transparent; border: 0; }
@@ -301,7 +301,7 @@ a:hover { color: #f39509; }
 .main-content .highlight pre, .main-content pre { padding: 0.8rem; overflow: auto; font-size: 0.9rem; line-height: 1.45; border-radius: 0.3rem; -webkit-overflow-scrolling: touch; }
 .main-content pre code, .main-content pre tt { display: inline; max-width: initial; padding: 0; margin: 0; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0; }
 .main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after { content: normal; }
-.main-content ul, .main-content ol { margin-top: 0; }
+.main-content ul, .main-content ol { margin-top: 0; font-family: avenir; font-size: 14px; }
 .main-content blockquote { padding: 0 1rem; margin-left: 0; color: #819198; border-left: 0.3rem solid #dce6f0; }
 .main-content blockquote > :first-child { margin-top: 0; }
 .main-content blockquote > :last-child { margin-bottom: 0; }
@@ -322,7 +322,7 @@ a:hover { color: #f39509; }
 
 .site-footer-credits { color: #819198; }
 
-title-head h1, title-head h2, title-head h3, title-head h4, title-head h5, title-head h6 { margin-top: 0; margin-bottom: 4rem; font-weight: normal; text-align: center; color: #0a0a0a; }
+title-head h1, title-head h2, title-head h3, title-head h4, title-head h5, title-head h6 { margin-top: 0; margin-bottom: 4rem; font-weight: normal; font-family: avenir; text-align: center; color: #0a0a0a; }
 
 .neo-header { color: #0a0a0a; background-color: #fff; width: 100%; padding: 2rem 4rem 0rem 4rem; display: inline-block; }
 .neo-header left-item { float: left; }

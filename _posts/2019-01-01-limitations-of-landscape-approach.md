@@ -6,7 +6,7 @@ tags: [deep learning, optimization, loss-surface, gradient-descent]
 excerpt_separator: <!--more-->
 date: 2019-01-01
 ---
-<title-head><h2><u>{{ page.title }}</u></h2></title-head>
+<title-head><h1>{{ page.title }}</h1></title-head>
 <br>
 Here I will write briefly about different approaches towards convergence analysis in the case of Deep Neural Networks(DNN).
 

@@ -5,6 +5,36 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: right;
+  padding: 10px;
+}
+
+.left {
+  width: 25%;
+  position: fixed;
+  text-align: center;
+}
+
+.right {
+  width: 75%;
+  padding-left: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Diffusion Limited Aggregation | Shekhar Jha</title>
@@ -27,14 +57,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=54b01911c58b000ee0eba9458d26a7b5b6d3b349">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6acae0d41bb0bb6eb1e119984a92d13ffcb38f34">
   </head>
-  <body style="max-width: 1200px;">
-  <header class="neo-header">
-    <right-item><a href="../../../index.html"> << Back to Homepage</a></right-item>
-  </header>
-    <main id="content" class="main-content" role="main">
-      <title-head><h2><u>Diffusion Limited Aggregation</u></h2></title-head>
+  <body style="max-width: 1000px;">
+
+      <div class="row">
+          <div class="column left">
+              <br><br><br><br><br>
+            <ul style="list-style:none;font-size:20px;font-family:avenir;">
+                <li><a href="../../../index.html" style="{color:#000;} :hover{#f39509;}">home</a></li>
+                <br>
+                <li><a href="../../../blog.html" style="{color:#000;} :hover{#f39509;}">other posts</a></li>
+            </ul>
+          </div>
+
+          <div class="column right">
+                <main id="content" class="main-content" role="main">
+                    <title-head><h1>Diffusion Limited Aggregation</h1></title-head>
 <p><br /></p>
 
 <p>In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At that time I somehow managed to do part of the assigment. But got overwhelmed by it and gave up. A couple of days ago, I thought to give it another shot. So here are initial results.</p>
@@ -63,6 +102,8 @@
 
 <!--<img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_500.png" width="400px" height="400px" align="center">-->
 
-    </main>
-  </body>
+                </main>
+          </div>
+      </div>
+    </body>
 </html>

@@ -1,12 +1,12 @@
 ---
 layout: post
 author: Shekhar Jha
-title: Variational Neural Machine Translation
+title: Variational NMT
 excerpt_separator: <!--more-->
 image: "https://jhashekhar.github.io/assets/img/lvm/latent-random-variable.png"
 ---
 
-<title-head><h2><u>{{page.title}}</u></h2></title-head>
+<title-head><h1>{{page.title}}</h1></title-head>
 <br>
 <p>While going deeper into Speech synthesis and Machine Translation, specifically Neural Machine Translation. I encountered this great paper titled <a href="https://arxiv.org/abs/2005.13978">Variational Neural Machine Translation with Normalizing Flows</a>. I've been familiar with Variational part of the title and somewhat rusty understanding of Normalizing Flow part. I was really excited with these frameworks application in NMT.</p>
 
@@ -20,7 +20,7 @@ Translation is inherently ambiguous. It is dependent on the context, domain and 
 
 <p>To address the issues mentioned above Latent Variable NMT(LVNMT) was introduced. There are few things that we need to keep in mind about Latent variables:</p>
 
-<ul style="font-size: 15px;">
+<ul>
     <li>Analyzing the latent variables is difficult and tricky. Think of trying to infer the state of learning while analyzing the attention values or the values of embedding vecotrs in Word2Vec or the in CV analysing the saliency maps. Experiments shows that latent codes improve accuracy.</li>
     <br>
     <li>It adds complexity to the model that makes the model flexible but also leads to the problem of intractable inference.(The intergration does not have analytic solution and numerical computation is very large).</li>
@@ -32,7 +32,7 @@ Translation is inherently ambiguous. It is dependent on the context, domain and 
 
 <h3>tldr:</h3>
 <hr>
-<ul style="font-size: 15px;">
+<ul>
     <li>Machine translation has ambiguities - depending upon author's style, context, domain, etc.</li>
     <li>Current NMT models gives SOTA results but doesn't have explicit mechanisms to address these ambiguities.</li>
     <li>To address it, Latent Variable Model NMT (LVNMT) is introduced.</li>
@@ -51,7 +51,7 @@ Translation is inherently ambiguous. It is dependent on the context, domain and 
         </td>
         <td>
             <p>Latent variable models defines distribution over a given sample x by using a latent variable \(z\). Most often \(z\) is a vector.</p>
-                <ul style="font-size: 15px;">
+                <ul>
                     <li>Latent variable \(z\) is sampled from a prior distribution \(p(z)\).</li>
                     <li><b>Prior distribution \(p(z)\)</b> is typically Gaussian distribution.</li>
                     <li><b>\(p(x|z)\) is the likelihood</b> of the sample.</li>
@@ -76,7 +76,7 @@ Translation is inherently ambiguous. It is dependent on the context, domain and 
 
 <h4>Todo :</h4>
 <hr>
-<ol style="font-size: 15px;">
+<ol>
 <li> Expand on Variational Inference - especially the intuitive interpretation of the ELBO.</li>
 <li> Adapt ELBO for VNMT and need to understand different kind of Flows - their strengths and limitations.</li>
 </ol>

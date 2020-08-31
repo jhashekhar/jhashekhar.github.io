@@ -5,6 +5,36 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: right;
+  padding: 10px;
+}
+
+.left {
+  width: 25%;
+  position: fixed;
+  text-align: center;
+}
+
+.right {
+  width: 75%;
+  padding-left: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Startup Crunchbase EDA | Shekhar Jha</title>
@@ -12,8 +42,8 @@
 <meta property="og:title" content="Startup Crunchbase EDA" />
 <meta name="author" content="Shekhar Jha" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Startup Crunchbase EDA This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data. Below are the links to data and code: Data Code Part 2 This post is divided into three sections: Motivation Basic Data Cleaning Data Approach Analysis 1. Motivation Before getting into Data Science and ML I used to work at a firm where part of my job comprised of interactions with a lot of different clients who were mainly medium business enterprises, I always wondered are they going to remain profitable, will they grow or they will fail and be out of business(this wasn&#39;t part of my job, but my boss&#39;s job). So, when I started with Data Science and encountered on this dataset, I couldn&#39;t stop myself from using my newly learnt skills, to do exactly the same using algorithms for startups. 2. Let&#39;s explore the data 2.1 Data So, let&#39;s have a little peek into the data: there are 54294 startups with 39 different features in the dataset. The data consists of diverse features like categorical features - status, market, country etc. and numerical features - funding_total_usd, seed, venture etc. and other features - founded_year, founded_month, permalink, region, category_list etc. We will go into detail on most of the features in the below sections and analyze them accordingly. 2.2 Approach There are a lot of variables in the data. We can delve deeper into each of these but that would make the post long and hard to parse through. Instead, I will try to answer some important questions about the datasets in this post. This post is structured around the following questions. How startups are distributed across different markets? Status, funding, categories of different startups? How much is the regional significance for the funding/growth of a startup? How funding is distributed across markets and categories? Are there outliers? 3. Analysis My approach to analysis would be to answer some of the interesting questions. The questions are not in any specific order. How startups are distributed across different markets? We have a feature column market. Following is the barplot distribution of all startups across top ten markets with the number of startups operating, closed etc. till 2014. The markets Below the plot shows the percentages of startups across different markets. What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation? Is there an effect of region on markets or categories in which startups operate? How important is regional advantage? In our dataset we have two features that are relevant in finding the answer to this question. One is startup&#39;s country of origin and the other is state that is specific to USA. Los Angeles is known for Hollywood/entertainment industry. New York is the finance capital of United States. So I want to inspect the effect of these uniqueness over the startup culture. How funding varies or distributed across markets and categories? One of the other point of interset is the funding of startup across market segments year over year. Some startups are popular due to market they operate in for example, Uber, Yelp, Stripe are famous because they serve millions of coustomers every day, whereas there are startups that provide enterprise solutions, or they are operating in markets like BioTech, Medicine. So, are the ecommerce companies more....." />
-<meta property="og:description" content="Startup Crunchbase EDA This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data. Below are the links to data and code: Data Code Part 2 This post is divided into three sections: Motivation Basic Data Cleaning Data Approach Analysis 1. Motivation Before getting into Data Science and ML I used to work at a firm where part of my job comprised of interactions with a lot of different clients who were mainly medium business enterprises, I always wondered are they going to remain profitable, will they grow or they will fail and be out of business(this wasn&#39;t part of my job, but my boss&#39;s job). So, when I started with Data Science and encountered on this dataset, I couldn&#39;t stop myself from using my newly learnt skills, to do exactly the same using algorithms for startups. 2. Let&#39;s explore the data 2.1 Data So, let&#39;s have a little peek into the data: there are 54294 startups with 39 different features in the dataset. The data consists of diverse features like categorical features - status, market, country etc. and numerical features - funding_total_usd, seed, venture etc. and other features - founded_year, founded_month, permalink, region, category_list etc. We will go into detail on most of the features in the below sections and analyze them accordingly. 2.2 Approach There are a lot of variables in the data. We can delve deeper into each of these but that would make the post long and hard to parse through. Instead, I will try to answer some important questions about the datasets in this post. This post is structured around the following questions. How startups are distributed across different markets? Status, funding, categories of different startups? How much is the regional significance for the funding/growth of a startup? How funding is distributed across markets and categories? Are there outliers? 3. Analysis My approach to analysis would be to answer some of the interesting questions. The questions are not in any specific order. How startups are distributed across different markets? We have a feature column market. Following is the barplot distribution of all startups across top ten markets with the number of startups operating, closed etc. till 2014. The markets Below the plot shows the percentages of startups across different markets. What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation? Is there an effect of region on markets or categories in which startups operate? How important is regional advantage? In our dataset we have two features that are relevant in finding the answer to this question. One is startup&#39;s country of origin and the other is state that is specific to USA. Los Angeles is known for Hollywood/entertainment industry. New York is the finance capital of United States. So I want to inspect the effect of these uniqueness over the startup culture. How funding varies or distributed across markets and categories? One of the other point of interset is the funding of startup across market segments year over year. Some startups are popular due to market they operate in for example, Uber, Yelp, Stripe are famous because they serve millions of coustomers every day, whereas there are startups that provide enterprise solutions, or they are operating in markets like BioTech, Medicine. So, are the ecommerce companies more....." />
+<meta name="description" content="Startup Crunchbase EDA This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data. Below are the links to data and code: Data Code This post is divided into three sections: Motivation Basic Data Cleaning Data Approach Analysis 1. Motivation Before getting into Data Science and ML I used to work at a firm where part of my job comprised of interactions with a lot of different clients who were mainly medium business enterprises, I always wondered are they going to remain profitable, will they grow or they will fail and be out of business(this wasn&#39;t part of my job, but my boss&#39;s job). So, when I started with Data Science and encountered on this dataset, I couldn&#39;t stop myself from using my newly learnt skills, to do exactly the same using algorithms for startups. 2. Let&#39;s explore the data 2.1 Data So, let&#39;s have a little peek into the data: there are 54294 startups with 39 different features in the dataset. The data consists of diverse features like categorical features - status, market, country etc. and numerical features - funding_total_usd, seed, venture etc. and other features - founded_year, founded_month, permalink, region, category_list etc. We will go into detail on most of the features in the below sections and analyze them accordingly. 2.2 Approach There are a lot of variables in the data. We can delve deeper into each of these but that would make the post long and hard to parse through. Instead, I will try to answer some important questions about the datasets in this post. This post is structured around the following questions. How startups are distributed across different markets? Status, funding, categories of different startups? How much is the regional significance for the funding/growth of a startup? How funding is distributed across markets and categories? Are there outliers? 3. Analysis My approach to analysis would be to answer some of the interesting questions. The questions are not in any specific order. How startups are distributed across different markets? We have a feature column market. Following is the barplot distribution of all startups across top ten markets with the number of startups operating, closed etc. till 2014. The markets Below the plot shows the percentages of startups across different markets. What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation? Is there an effect of region on markets or categories in which startups operate? How important is regional advantage? In our dataset we have two features that are relevant in finding the answer to this question. One is startup&#39;s country of origin and the other is state that is specific to USA. Los Angeles is known for Hollywood/entertainment industry. New York is the finance capital of United States. So I want to inspect the effect of these uniqueness over the startup culture. How funding varies or distributed across markets and categories? One of the other point of interset is the funding of startup across market segments year over year." />
+<meta property="og:description" content="Startup Crunchbase EDA This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data. Below are the links to data and code: Data Code This post is divided into three sections: Motivation Basic Data Cleaning Data Approach Analysis 1. Motivation Before getting into Data Science and ML I used to work at a firm where part of my job comprised of interactions with a lot of different clients who were mainly medium business enterprises, I always wondered are they going to remain profitable, will they grow or they will fail and be out of business(this wasn&#39;t part of my job, but my boss&#39;s job). So, when I started with Data Science and encountered on this dataset, I couldn&#39;t stop myself from using my newly learnt skills, to do exactly the same using algorithms for startups. 2. Let&#39;s explore the data 2.1 Data So, let&#39;s have a little peek into the data: there are 54294 startups with 39 different features in the dataset. The data consists of diverse features like categorical features - status, market, country etc. and numerical features - funding_total_usd, seed, venture etc. and other features - founded_year, founded_month, permalink, region, category_list etc. We will go into detail on most of the features in the below sections and analyze them accordingly. 2.2 Approach There are a lot of variables in the data. We can delve deeper into each of these but that would make the post long and hard to parse through. Instead, I will try to answer some important questions about the datasets in this post. This post is structured around the following questions. How startups are distributed across different markets? Status, funding, categories of different startups? How much is the regional significance for the funding/growth of a startup? How funding is distributed across markets and categories? Are there outliers? 3. Analysis My approach to analysis would be to answer some of the interesting questions. The questions are not in any specific order. How startups are distributed across different markets? We have a feature column market. Following is the barplot distribution of all startups across top ten markets with the number of startups operating, closed etc. till 2014. The markets Below the plot shows the percentages of startups across different markets. What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation? Is there an effect of region on markets or categories in which startups operate? How important is regional advantage? In our dataset we have two features that are relevant in finding the answer to this question. One is startup&#39;s country of origin and the other is state that is specific to USA. Los Angeles is known for Hollywood/entertainment industry. New York is the finance capital of United States. So I want to inspect the effect of these uniqueness over the startup culture. How funding varies or distributed across markets and categories? One of the other point of interset is the funding of startup across market segments year over year." />
 <link rel="canonical" href="http://localhost:4000/2020/07/05/eda-startup-cb.html" />
 <meta property="og:url" content="http://localhost:4000/2020/07/05/eda-startup-cb.html" />
 <meta property="og:site_name" content="Shekhar Jha" />
@@ -21,34 +51,42 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-05T00:00:00+05:30" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Shekhar Jha"},"image":"https://jhashekhar.github.io/assets/img/startup_p/funding_yoy.gif","headline":"Startup Crunchbase EDA","dateModified":"2020-07-05T00:00:00+05:30","description":"Startup Crunchbase EDA This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data. Below are the links to data and code: Data Code Part 2 This post is divided into three sections: Motivation Basic Data Cleaning Data Approach Analysis 1. Motivation Before getting into Data Science and ML I used to work at a firm where part of my job comprised of interactions with a lot of different clients who were mainly medium business enterprises, I always wondered are they going to remain profitable, will they grow or they will fail and be out of business(this wasn&#39;t part of my job, but my boss&#39;s job). So, when I started with Data Science and encountered on this dataset, I couldn&#39;t stop myself from using my newly learnt skills, to do exactly the same using algorithms for startups. 2. Let&#39;s explore the data 2.1 Data So, let&#39;s have a little peek into the data: there are 54294 startups with 39 different features in the dataset. The data consists of diverse features like categorical features - status, market, country etc. and numerical features - funding_total_usd, seed, venture etc. and other features - founded_year, founded_month, permalink, region, category_list etc. We will go into detail on most of the features in the below sections and analyze them accordingly. 2.2 Approach There are a lot of variables in the data. We can delve deeper into each of these but that would make the post long and hard to parse through. Instead, I will try to answer some important questions about the datasets in this post. This post is structured around the following questions. How startups are distributed across different markets? Status, funding, categories of different startups? How much is the regional significance for the funding/growth of a startup? How funding is distributed across markets and categories? Are there outliers? 3. Analysis My approach to analysis would be to answer some of the interesting questions. The questions are not in any specific order. How startups are distributed across different markets? We have a feature column market. Following is the barplot distribution of all startups across top ten markets with the number of startups operating, closed etc. till 2014. The markets Below the plot shows the percentages of startups across different markets. What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation? Is there an effect of region on markets or categories in which startups operate? How important is regional advantage? In our dataset we have two features that are relevant in finding the answer to this question. One is startup&#39;s country of origin and the other is state that is specific to USA. Los Angeles is known for Hollywood/entertainment industry. New York is the finance capital of United States. So I want to inspect the effect of these uniqueness over the startup culture. How funding varies or distributed across markets and categories? One of the other point of interset is the funding of startup across market segments year over year. Some startups are popular due to market they operate in for example, Uber, Yelp, Stripe are famous because they serve millions of coustomers every day, whereas there are startups that provide enterprise solutions, or they are operating in markets like BioTech, Medicine. So, are the ecommerce companies more.....","datePublished":"2020-07-05T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/07/05/eda-startup-cb.html"},"@type":"BlogPosting","url":"http://localhost:4000/2020/07/05/eda-startup-cb.html","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Shekhar Jha"},"image":"https://jhashekhar.github.io/assets/img/startup_p/funding_yoy.gif","headline":"Startup Crunchbase EDA","dateModified":"2020-07-05T00:00:00+05:30","description":"Startup Crunchbase EDA This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data. Below are the links to data and code: Data Code This post is divided into three sections: Motivation Basic Data Cleaning Data Approach Analysis 1. Motivation Before getting into Data Science and ML I used to work at a firm where part of my job comprised of interactions with a lot of different clients who were mainly medium business enterprises, I always wondered are they going to remain profitable, will they grow or they will fail and be out of business(this wasn&#39;t part of my job, but my boss&#39;s job). So, when I started with Data Science and encountered on this dataset, I couldn&#39;t stop myself from using my newly learnt skills, to do exactly the same using algorithms for startups. 2. Let&#39;s explore the data 2.1 Data So, let&#39;s have a little peek into the data: there are 54294 startups with 39 different features in the dataset. The data consists of diverse features like categorical features - status, market, country etc. and numerical features - funding_total_usd, seed, venture etc. and other features - founded_year, founded_month, permalink, region, category_list etc. We will go into detail on most of the features in the below sections and analyze them accordingly. 2.2 Approach There are a lot of variables in the data. We can delve deeper into each of these but that would make the post long and hard to parse through. Instead, I will try to answer some important questions about the datasets in this post. This post is structured around the following questions. How startups are distributed across different markets? Status, funding, categories of different startups? How much is the regional significance for the funding/growth of a startup? How funding is distributed across markets and categories? Are there outliers? 3. Analysis My approach to analysis would be to answer some of the interesting questions. The questions are not in any specific order. How startups are distributed across different markets? We have a feature column market. Following is the barplot distribution of all startups across top ten markets with the number of startups operating, closed etc. till 2014. The markets Below the plot shows the percentages of startups across different markets. What role does region plays into funding and growth of startup? How region affects startups in terms of number and valuation? Is there an effect of region on markets or categories in which startups operate? How important is regional advantage? In our dataset we have two features that are relevant in finding the answer to this question. One is startup&#39;s country of origin and the other is state that is specific to USA. Los Angeles is known for Hollywood/entertainment industry. New York is the finance capital of United States. So I want to inspect the effect of these uniqueness over the startup culture. How funding varies or distributed across markets and categories? One of the other point of interset is the funding of startup across market segments year over year.","datePublished":"2020-07-05T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/07/05/eda-startup-cb.html"},"@type":"BlogPosting","url":"http://localhost:4000/2020/07/05/eda-startup-cb.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=54b01911c58b000ee0eba9458d26a7b5b6d3b349">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6acae0d41bb0bb6eb1e119984a92d13ffcb38f34">
   </head>
-  <body style="max-width: 1200px;">
-  <header class="neo-header">
-    <right-item><a href="../../../index.html"> << Back to Homepage</a></right-item>
-  </header>
-    <main id="content" class="main-content" role="main">
-      <title-head><h2><u>Startup Crunchbase EDA</u></h2></title-head>
+  <body style="max-width: 1000px;">
+
+      <div class="row">
+          <div class="column left">
+              <br><br><br><br><br>
+            <ul style="list-style:none;font-size:20px;font-family:avenir;">
+                <li><a href="../../../index.html" style="{color:#000;} :hover{#f39509;}">home</a></li>
+                <br>
+                <li><a href="../../../blog.html" style="{color:#000;} :hover{#f39509;}">other posts</a></li>
+            </ul>
+          </div>
+
+          <div class="column right">
+                <main id="content" class="main-content" role="main">
+                    <title-head><h1>Startup Crunchbase EDA</h1></title-head>
 <p><br /></p>
 <p>This is Part-1 of a series of two post where I will be trying to visualise and use machine learning algorithms to make predictions for the data.</p>
 
 <p>
 Below are the links to data and code:
-<ul style="font-size: 15px;">
+<ul>
     <li><a href="https://www.kaggle.com/arindam235/startup-investments-crunchbase">Data</a></li>
-    <li><a href="https://github.com/jhashekhar/startup-cb">Code</a></li>
-    <li><a href="https://jhashekhar.github.io/2020-06-07-startup-cb-part2.md">Part 2</a></li>   
+    <li><a href="https://github.com/jhashekhar/startup-cb">Code</a></li>  
 </ul></p>
 
 <p>
 This post is divided into three sections:
-<ol style="font-size: 15px;">
+<ol>
 <li>Motivation</li>
 <li>Basic Data Cleaning</li>
     <ul>
@@ -78,7 +116,7 @@ So, when I started with Data Science and encountered on this dataset, I couldn't
 <p>There are a lot of variables in the data. We can delve deeper into each of these but that would make the post long and hard to parse through. Instead, I will try to answer some important questions about the datasets in this post.</p>
 
 <p>This post is structured around the following questions.
-<ul style="font-size: 15px;">
+<ul>
     <li>How startups are distributed across different markets?</li>
     <li>Status, funding, categories of different startups?</li>
     <li>How much is the regional significance for the funding/growth of a startup?</li>
@@ -118,8 +156,6 @@ So, when I started with Data Science and encountered on this dataset, I couldn't
 <!-- <img src="https://jhashekhar.github.io/assets/img/funding_across_market_segments.png"> -->
 <img src="https://jhashekhar.github.io/assets/img/startup_p/funding_yoy.gif" />
 
-<p>Some startups are popular due to market they operate in for example, Uber, Yelp, Stripe are famous because they serve millions of coustomers every day, whereas there are startups that provide enterprise solutions, or they are operating in markets like BioTech, Medicine. So, are the ecommerce companies more.....</p>
-
 <!--
 <h3><i>Are there outliers - in terms of fundings for various stages? Which market do they belong to?</i></h3>-->
 
@@ -129,6 +165,8 @@ So, when I started with Data Science and encountered on this dataset, I couldn't
 
 </p></p></p></p>
 
-    </main>
-  </body>
+                </main>
+          </div>
+      </div>
+    </body>
 </html>

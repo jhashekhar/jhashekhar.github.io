@@ -11,31 +11,16 @@ description: Home page
   }
 </style>
 
-<title-head><h1 text-align="center">{{ page.title }}</h1></title-head>
-<br/>
+<title-head><h1 style="text-align:right;font-size:40px;font-family:avenir;">{{ page.title }}</h1></title-head>
+<p style="text-align:right;">shkrjha [at] outlook [dot] com </p>
+<br>
 
-<p>Hello, I'm Shekhar. I enjoy working on problems related to  Natural Language Processing, 
-Generative Models and functional programming.<br/><br/></p>
+<p style="font-size:24px;"><a href="https://github.com/jhashekhar">github</a> | <a href="blog.html">blog</a></p>
 
+<p style="font-family:avenir;">Hello, I'm Shekhar. I enjoy working on problems related to  Natural Language Processing, 
+Generative Models and functional programming.<br><br></p>
 
-<p>Other links: <a href="https://github.com/jhashekhar"> Github  </a> | <a href="blog.html"> Blog </a></p>
-
-<br/>
-
-<p> <b>Recent:</b>  I'm currently learning functional programming in Haskell. I'm also working on 
+<p><b>Recent news | dd/mm/yy</b></p>  
+<p><u style="{color:#000;}">02/08/20</u>, I'm currently learning functional programming in Haskell. I'm also working on 
 a speech-to-text project and application of Latent Variable Model in Machine Translation.</p>
 
-<!--
-<h3>Recent Posts</h3>
-
-{% for post in site.posts limit:2 %}
-<table id="menu">
-  <tr>
-    <td width="180px" height="160px"><img src="{{ post.image }}"></td>
-    <td><p><a href="{{ post.url }}"> {{ post.title }} </a> | {{ post.date | date: "%b %d, %Y" }} <br/>
-    {{ post.content | strip_html | truncatewords: 40 }}
-    </p></td>
-  </tr>
-</table>
-{% endfor %}
--->

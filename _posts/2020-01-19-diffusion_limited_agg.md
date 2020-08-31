@@ -6,7 +6,7 @@ image: "https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000_1.gif"
 excerpt_separator: <!--more-->
 date: 2020-01-20
 ---
-<title-head><h2><u>{{ page.title }}</u></h2></title-head>
+<title-head><h1>{{ page.title }}</h1></title-head>
 <br>
 
 <p>In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At that time I somehow managed to do part of the assigment. But got overwhelmed by it and gave up. A couple of days ago, I thought to give it another shot. So here are initial results.</p>
