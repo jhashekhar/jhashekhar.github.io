@@ -2,13 +2,6 @@
 layout: post
 title: Blog
 ---
-<style>
-#menu img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-</style>
 
 <!-- <h3 align="center"><u>Posts</u></h3><br> -->
 <br>

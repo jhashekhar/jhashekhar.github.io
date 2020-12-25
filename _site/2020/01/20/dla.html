@@ -20,13 +20,13 @@
 }
 
 .left {
-  width: 15%;
+  width: 0%;
   position: fixed;
   text-align: left;
 }
 
 .right {
-  width: 82%;
+  width: 100%;
   padding-left: 20px;
 }
 
@@ -66,25 +66,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="/assets/css/style.css?v=62a8776149a8c776c2d50f3d36dffe6e291423a7">
   </head>
-  <body style="max-width: 1024px;">
 
+  <body style="max-width: 900px;">
       <div class="row">
-          <div class="column left">
-              <br><br><br>
-            <ul style="list-style:none;font-size:14px;font-family:avenir;">
-                <li style="font-size:30px;font-family:avenir;"><p style="line-height:40px;">Shekhar Jha</p></li>
-                <li><a href="https://github.com/jhashekhar" style="{color:#000;} :hover{#f39509;}"><b>Github </b></a></li>
-                <li><a href="../../../blog.html" style="{color:#000;} :hover{#f39509;}"><b>Blog</b></a></li>
-                <li><a href="../../../news.html" style="{color:#000;} :hover{#f39509;}"><b>News</b></a></li>
-                <li><a href="../../../rl.html" style="{color:#000;} :hover{#f39509;}"><b>Reading List</b></li>
-            </ul>
-          </div>
-
           <div class="column right">
                 <main id="content" class="main-content" role="main">
+                  <p style="text-align:right;"><a href="https://jhashekhar.github.io"><b>Home</b></a></p>
+                  <hr><br>
                     <title-head><h1>Diffusion Limited Aggregation</h1></title-head>
 <p><br /></p>
-
 <p>In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At that time I somehow managed to do part of the assigment. But got overwhelmed by it and gave up. A couple of days ago, I thought to give it another shot. So here are initial results.</p>
 
 <p>I'm using python, matplotlib, seaborn, gif libraries to generate the visuals.</p>
@@ -97,14 +87,25 @@
 
 <table style="width: 100%; text-align: center;">
 <tr>
-    <td><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_100.gif" /></td>
-    <td><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000_1.gif" /></td>
-    <td><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_2000.gif" /></td>
+    <td><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_100.gif" /></td> 
 </tr>
 
 <tr>
     <td>N = 100</td>
+</tr>
+<br />
+<tr>
+    <td><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000_1.gif" /></td>
+</tr>
+
+<tr>
     <td>N = 1000</td>
+</tr>
+<br />
+<tr>
+    <td><img src="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_2000.gif" /></td>
+</tr>
+<tr>
     <td>N = 2000</td>
 </tr>
 </table>

@@ -11,7 +11,7 @@ description: Home page
   }
 </style>
 
-<title-head><h1 style="text-align:left;font-size:40px;font-family:avenir;">{{ page.title }}</h1></title-head>
+<title-head><h1 style="text-align:center;font-size:40px;font-family:avenir;">{{ page.title }}</h1></title-head>
 <!--<p style="text-align:right;">shkrjha [at] outlook [dot] com </p>-->
 
 
@@ -21,17 +21,15 @@ description: Home page
 <p style="font-family:avenir;">Hello, I'm Shekhar. I enjoy working on problems related to  Natural Language Processing, 
 Generative Models and functional programming.<br><br></p>
 -->
-<p style="font-family:avenir;font-size:15px;">I enjoy working on probelms related to Natural Language, Machine Learning. I write code primarily in Python and Haskell.
+<br>
+<p style="font-family:avenir;font-size:16px;">Hello! I'm Shekhar. I enjoy working on probelms related to Natural Language, Machine Learning and code primarily in Python and Haskell.
 <br><br>
-I'm active on email, say hi: <u>shkrjha [at] outlook [dot] com</u></p>
+I'm active on email, say hi: shkrjha [at] outlook [dot] com</p>
 
-<h4 style="font-family:avenir;">Writing/Notes</h4>
+<h3 style="font-family:avenir;">Writings</h3>
 <li><a href="2020/07/31/vnmt.html" style="font-size:15px;">Variational Neural Machine Translation</a></li>
 <li><a href="2020/01/20/dla.html" style="font-size:15px;">Diffusion Limited Aggregation</a></li>
 
-<h4 style="font-family:avenir;">Projects</h4>
+<h3 style="font-family:avenir;">Projects</h3>
 <li style="font-size:15px;"><a href="https://github.com/jhashekhar/multilingual-clf">Multilingual Toxic Comment Classification</a></li>
 <li style="font-size:15px;"><a href="https://github.com/jhashekhar/disaster-clf">Disaster Tweet Classification</a></li>
-
-<h4 style="font-family:avenir;">Recent</h4>  
-<p style="font-family:avenir;font-size:15px;"><u style="color:#000;font-size:15px;">Aug 2, 2020</u>, I'm currently learning Haskell. I'm also working on a speech-to-text project and application of Latent Variable Model in Machine Translation.</p>

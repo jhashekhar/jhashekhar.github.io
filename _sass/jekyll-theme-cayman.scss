@@ -29,7 +29,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   color: $body-text-color;
   width: 100%;
@@ -203,12 +203,12 @@ a {
   }
 
   img {
-    max-width: 100%;
-    //max-width: 200px;
+    //max-width: 100%;
+    max-width: 600px;
     //width: auto;
     //height: auto;
     text-align: center;
-    //object-fit: contain;
+    object-fit: contain;
   }
 
 
@@ -225,9 +225,9 @@ a {
   }
 
   p {
-    font-family: avenir;
+    font-family: Lato;
     margin-bottom: 1em;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   code {
@@ -302,8 +302,8 @@ a {
   ul,
   ol {
     margin-top: 0;
-    font-family: avenir;
-    font-size: 14px;
+    font-family: Lato;
+    font-size: 15px;
   }
 
   blockquote {
@@ -404,7 +404,7 @@ title-head {
     margin-top: 0;
     margin-bottom: 4rem;
     font-weight: normal;
-    font-family: avenir;
+    font-family: Lato;
     text-align: left;
     color: $section-headings-color;
   }
