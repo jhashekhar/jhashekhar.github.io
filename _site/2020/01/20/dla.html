@@ -5,10 +5,13 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <meta charset="UTF-8">
+
+
 <style>
 * {
   box-sizing: border-box;
 }
+
 
 /* Create two unequal columns that floats next to each other */
 .column {
@@ -17,14 +20,14 @@
 }
 
 .left {
-  width: 25%;
+  width: 15%;
   position: fixed;
-  text-align: center;
+  text-align: left;
 }
 
 .right {
-  width: 75%;
-  padding-left: 15px;
+  width: 82%;
+  padding-left: 20px;
 }
 
 /* Clear floats after the columns */
@@ -32,6 +35,10 @@
   content: "";
   display: table;
   clear: both;
+}
+
+.row li {
+  margin: 0 0 4px 0;
 }
 </style>
 
@@ -44,30 +51,32 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Diffusion Limited Aggregation In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At that time I somehow managed to do part of the assigment. But got overwhelmed by it and gave up. A couple of days ago, I thought to give it another shot. So here are initial results. I&#39;m using python, matplotlib, seaborn, gif libraries to generate the visuals. The visualization generating processing is quite long. It takes hours to generate cool visuals, more on this later. So sharing visuals in this post would be ongoing process. Right now I&#39;m sharing some of my inital results and observations. Reference: Diffusion Limited Aggregation. Please read this linked post. Apart from 2 dimensional DLA they also talk about 3 dimensional DLA and how that can render cool visualization of natural processes. Below is the DLA progression known as Point Attractor for N = 100, N = 1000, N = 2000, where N is the number of particles. N = 100 N = 1000 N = 2000" />
 <meta property="og:description" content="Diffusion Limited Aggregation In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At that time I somehow managed to do part of the assigment. But got overwhelmed by it and gave up. A couple of days ago, I thought to give it another shot. So here are initial results. I&#39;m using python, matplotlib, seaborn, gif libraries to generate the visuals. The visualization generating processing is quite long. It takes hours to generate cool visuals, more on this later. So sharing visuals in this post would be ongoing process. Right now I&#39;m sharing some of my inital results and observations. Reference: Diffusion Limited Aggregation. Please read this linked post. Apart from 2 dimensional DLA they also talk about 3 dimensional DLA and how that can render cool visualization of natural processes. Below is the DLA progression known as Point Attractor for N = 100, N = 1000, N = 2000, where N is the number of particles. N = 100 N = 1000 N = 2000" />
-<link rel="canonical" href="http://localhost:4000/2020/01/20/diffusion_limited_agg.html" />
-<meta property="og:url" content="http://localhost:4000/2020/01/20/diffusion_limited_agg.html" />
+<link rel="canonical" href="http://localhost:4000/2020/01/20/dla.html" />
+<meta property="og:url" content="http://localhost:4000/2020/01/20/dla.html" />
 <meta property="og:site_name" content="Shekhar Jha" />
 <meta property="og:image" content="https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000_1.gif" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-20T00:00:00+05:30" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Shekhar Jha"},"image":"https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000_1.gif","headline":"Diffusion Limited Aggregation","dateModified":"2020-01-20T00:00:00+05:30","description":"Diffusion Limited Aggregation In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At that time I somehow managed to do part of the assigment. But got overwhelmed by it and gave up. A couple of days ago, I thought to give it another shot. So here are initial results. I&#39;m using python, matplotlib, seaborn, gif libraries to generate the visuals. The visualization generating processing is quite long. It takes hours to generate cool visuals, more on this later. So sharing visuals in this post would be ongoing process. Right now I&#39;m sharing some of my inital results and observations. Reference: Diffusion Limited Aggregation. Please read this linked post. Apart from 2 dimensional DLA they also talk about 3 dimensional DLA and how that can render cool visualization of natural processes. Below is the DLA progression known as Point Attractor for N = 100, N = 1000, N = 2000, where N is the number of particles. N = 100 N = 1000 N = 2000","datePublished":"2020-01-20T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/01/20/diffusion_limited_agg.html"},"@type":"BlogPosting","url":"http://localhost:4000/2020/01/20/diffusion_limited_agg.html","@context":"https://schema.org"}</script>
+{"image":"https://jhashekhar.github.io/assets/img/diffusion_p/n_200_k_1000_1.gif","headline":"Diffusion Limited Aggregation","dateModified":"2020-01-20T00:00:00+05:30","datePublished":"2020-01-20T00:00:00+05:30","url":"http://localhost:4000/2020/01/20/dla.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/01/20/dla.html"},"author":{"@type":"Person","name":"Shekhar Jha"},"description":"Diffusion Limited Aggregation In one of my job application process I received an assignment related to Diffusion Limited Aggregation. At that time I somehow managed to do part of the assigment. But got overwhelmed by it and gave up. A couple of days ago, I thought to give it another shot. So here are initial results. I&#39;m using python, matplotlib, seaborn, gif libraries to generate the visuals. The visualization generating processing is quite long. It takes hours to generate cool visuals, more on this later. So sharing visuals in this post would be ongoing process. Right now I&#39;m sharing some of my inital results and observations. Reference: Diffusion Limited Aggregation. Please read this linked post. Apart from 2 dimensional DLA they also talk about 3 dimensional DLA and how that can render cool visualization of natural processes. Below is the DLA progression known as Point Attractor for N = 100, N = 1000, N = 2000, where N is the number of particles. N = 100 N = 1000 N = 2000","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=6acae0d41bb0bb6eb1e119984a92d13ffcb38f34">
+    <link rel="stylesheet" href="/assets/css/style.css?v=62a8776149a8c776c2d50f3d36dffe6e291423a7">
   </head>
-  <body style="max-width: 1000px;">
+  <body style="max-width: 1024px;">
 
       <div class="row">
           <div class="column left">
-              <br><br><br><br><br>
-            <ul style="list-style:none;font-size:20px;font-family:avenir;">
-                <li><a href="../../../index.html" style="{color:#000;} :hover{#f39509;}">home</a></li>
-                <br>
-                <li><a href="../../../blog.html" style="{color:#000;} :hover{#f39509;}">other posts</a></li>
+              <br><br><br>
+            <ul style="list-style:none;font-size:14px;font-family:avenir;">
+                <li style="font-size:30px;font-family:avenir;"><p style="line-height:40px;">Shekhar Jha</p></li>
+                <li><a href="https://github.com/jhashekhar" style="{color:#000;} :hover{#f39509;}"><b>Github </b></a></li>
+                <li><a href="../../../blog.html" style="{color:#000;} :hover{#f39509;}"><b>Blog</b></a></li>
+                <li><a href="../../../news.html" style="{color:#000;} :hover{#f39509;}"><b>News</b></a></li>
+                <li><a href="../../../rl.html" style="{color:#000;} :hover{#f39509;}"><b>Reading List</b></li>
             </ul>
           </div>
 

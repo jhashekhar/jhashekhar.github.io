@@ -322,7 +322,7 @@ a:hover { color: #f39509; }
 
 .site-footer-credits { color: #819198; }
 
-title-head h1, title-head h2, title-head h3, title-head h4, title-head h5, title-head h6 { margin-top: 0; margin-bottom: 4rem; font-weight: normal; font-family: avenir; text-align: center; color: #0a0a0a; }
+title-head h1, title-head h2, title-head h3, title-head h4, title-head h5, title-head h6 { margin-top: 0; margin-bottom: 4rem; font-weight: normal; font-family: avenir; text-align: left; color: #0a0a0a; }
 
 .neo-header { color: #0a0a0a; background-color: #fff; width: 100%; padding: 2rem 4rem 0rem 4rem; display: inline-block; }
 .neo-header left-item { float: left; }
