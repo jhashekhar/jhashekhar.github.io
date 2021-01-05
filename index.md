@@ -27,7 +27,7 @@ Generative Models and functional programming.<br><br></p>
 I'm active on email, say hi: shkrjha [at] outlook [dot] com</p>
 
 <h3 style="font-family:avenir;">Writings</h3>
-<li><a href="2020/07/31/vnmt.html" style="font-size:15px;">Variational Neural Machine Translation</a></li>
+<li><a href="2020/07/31/vnmt.html" style="font-size:15px;">Variational Neural Machine</a></li>
 <li><a href="2020/01/20/dla.html" style="font-size:15px;">Diffusion Limited Aggregation</a></li>
 
 <h3 style="font-family:avenir;">Projects</h3>
