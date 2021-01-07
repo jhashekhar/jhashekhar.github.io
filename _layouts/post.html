@@ -35,7 +35,7 @@
 
 .right {
   width: 100%;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 /* Clear floats after the columns */
@@ -48,6 +48,12 @@
 .row li {
   margin: 0 0 4px 0;
 }
+
+img {
+ display: block;
+ height: 100%;
+ width: 100%
+}
 </style>
 
 
@@ -58,12 +64,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
 
-  <body style="max-width: 900px;">
+  <body style="max-width: 800px;">
       <div class="row">
           <div class="column right">
                 <main id="content" class="main-content" role="main">
-                  <p style="text-align:right;"><a href="https://jhashekhar.github.io"><b>Home</b></a></p>
-                  <hr><br>
                     {{ content }}
                 </main>
           </div>
