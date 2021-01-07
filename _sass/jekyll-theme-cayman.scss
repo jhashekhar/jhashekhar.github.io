@@ -28,13 +28,13 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-family: Helvetica;// Arial, sans-serif;
+  font-size: 13px;
   line-height: 1.5;
-  color: $body-text-color;
-  width: 100%;
-  max-width: 760px;
-  margin-left: auto;
+  color: #333;
+  width: 80%;
+  max-width: 700px;
+  margin-left: 100px;
   margin-right: auto;
   text-align: justify;
 }
@@ -62,7 +62,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: #f39509;
+    text-decoration: underline;
   }
 }
 
@@ -218,18 +218,20 @@ a {
   h4,
   h5,
   h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 0.8em;
+    margin-bottom: 0;
     font-weight: normal;
     color: $section-headings-color;
   }
 
   p {
-    font-family: Lato;
-    margin-bottom: 1em;
-    font-size: 16px;
+    line-height: 18px;
+    font-size: 13px;
   }
 
+  p.notop {
+    margin-top: 0;
+  }
   code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -301,9 +303,11 @@ a {
 
   ul,
   ol {
-    margin-top: 0;
-    font-family: Lato;
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  li {
+    margin-bottom: 0.5em;
   }
 
   blockquote {
@@ -324,6 +328,7 @@ a {
   table {
     display: block;
     width: 100%;
+    margin-top: 0;
     overflow: auto;
     word-break: normal;
     word-break: keep-all; // For Firefox to horizontally scroll wider tables.
@@ -402,9 +407,8 @@ title-head {
   h5,
   h6 {
     margin-top: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 0px;
     font-weight: normal;
-    font-family: Lato;
     text-align: left;
     color: $section-headings-color;
   }

@@ -11,25 +11,35 @@ description: Home page
   }
 </style>
 
-<title-head><h1 style="text-align:center;font-size:40px;font-family:avenir;">{{ page.title }}</h1></title-head>
-<!--<p style="text-align:right;">shkrjha [at] outlook [dot] com </p>-->
+<title-head><h3>{{ page.title }}</h3></title-head>
+
+<p>
+    I live in India. I enjoy working on but not limited to Natural Language, 
+    Machine Learning and I write code primarily in Haskell and Python.
+</p>
+
+<p>
+Email: <a href="mailto:shkrjha@outlook.com">shkrjha@outlook.com</a>
+</p>
+
+<p>
+<a href="https://github.com/jhashekhar">jhashekhar</a> on GitHub
+</p>
+
+<h5><b>Writings</b></h5>
+<p class="notop">Sometimes I share notes on a topic or project that I find interesting.
+</p>
+<ul>
+<li>VNMT - <a href="2020/07/31/vnmt.html">Variational Neural Machine Translation</a></li>
+<li>DLA - <a href="2020/01/20/dla.html">Diffusion Limited Aggregation</a></li>
+</ul>
+
+<h5><b>Projects</b></h5>
+<p class="notop"> Projects that I've done recently: </p>
+<ul>
+<li>multilingual toxicity detection <a href="https://github.com/jhashekhar/multilingual-clf">multilingual-clf</a></li>
+<li>disaster tweets identification <a href="https://github.com/jhashekhar/disaster-clf">disaster-clf</a></li>
+</ul>
 
 
-<!--<p style="font-size:24px;"><a href="https://github.com/jhashekhar">github</a> | <a href="blog.html">blog</a> | <a href="news.html">news</a></p>-->
 
-<!--
-<p style="font-family:avenir;">Hello, I'm Shekhar. I enjoy working on problems related to  Natural Language Processing, 
-Generative Models and functional programming.<br><br></p>
--->
-<br>
-<p style="font-family:avenir;font-size:16px;">Hello! I'm Shekhar. I enjoy working on probelms related to Natural Language, Machine Learning and code primarily in Python and Haskell.
-<br><br>
-I'm active on email, say hi: shkrjha [at] outlook [dot] com</p>
-
-<h3 style="font-family:avenir;">Writings</h3>
-<li><a href="2020/07/31/vnmt.html" style="font-size:15px;">Variational Neural Machine</a></li>
-<li><a href="2020/01/20/dla.html" style="font-size:15px;">Diffusion Limited Aggregation</a></li>
-
-<h3 style="font-family:avenir;">Projects</h3>
-<li style="font-size:15px;"><a href="https://github.com/jhashekhar/multilingual-clf">Multilingual Toxic Comment Classification</a></li>
-<li style="font-size:15px;"><a href="https://github.com/jhashekhar/disaster-clf">Disaster Tweet Classification</a></li>
